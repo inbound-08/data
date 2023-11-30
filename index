@@ -1,0 +1,9 @@
+public class PowerCalculator {
+    static int power(int base, int exponent) {
+        return exponent == 0 ? 1 : base * power(base, exponent - 1);
+    }
+
+    public static void main(String[] args) {
+        System.out.println("2^3:", power(2, 3));
+    }
+}
